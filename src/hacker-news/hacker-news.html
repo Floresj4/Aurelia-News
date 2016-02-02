@@ -1,5 +1,9 @@
 <template>
     <section>
         <h3>${heading}</h3>
+
+        <ul>
+            <li repeat.for="newsItem of newsItems">${newsItem}</li>
+        </ul>
     </section>
 </template>

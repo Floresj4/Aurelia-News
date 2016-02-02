@@ -17,9 +17,8 @@ export class HackerNews {
     }
 
     activate() {
-        return this.http.fetch('maxitem.json?print=pretty')
+        return this.http.fetch('topstories.json?print=pretty')
             .then(response => response.json())
             .then(newsItems => this.newsItems = newsItems);
-
     }
 }
